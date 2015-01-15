@@ -1,0 +1,8 @@
+extern void arrival_thread_routine(void *arg);
+extern void server_thread_routine(void *arg);
+extern void signal_thread_routine(void *arg);
+extern void token_depositing_routine(void *arg);
+extern void clean_up();
+extern void print_stats();
+
+

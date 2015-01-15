@@ -1,0 +1,2 @@
+hellomake: main.c packet_arrival_thread.c token_depositing_thread.c server_thread.c statistics.c my402list.c clean_up.c
+     gcc  -pthread -o hellomake main.c packet_arrival_thread.c token_depositing_thread.c server_thread.c statistics.c my402list.c clean_up.c -I. -lm

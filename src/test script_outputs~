@@ -1,0 +1,147 @@
+ 1) ./warmup2 -n 4 -r 7 -B 7 -P 5 -lambda 1.667 -mu 8.5 
+ Average Packet Inter-Arrival Time : (2400.527000)/(4) = 0.600132 sec   
+ Average Packet Service Time       : (471.252000)/(4) = 0.117813 sec   
+
+ Average Packets in Q1 : (1151.890000)/(3004.459000) = 0.383393  
+ Average Packets in Q2 :  (0.152000)/(3004.459000) = 0.000051  
+ Average Packets in S  :  (470.588235)/(3004.459000) = 0.156630  
+
+ Average time a Packet spends in system : (1.623640)/(4) = 0.405910 sec   
+ SD for time spent in system : sqrt((0.181356) - (0.164763)) = 0.128815 sec   
+
+ Token drop probability :  (0)/(21) = 0.000000
+ Packet drop probability :  (0)/(4) = 0.000000
+
+
+2) ./warmup2 -mu 0.85 -r 0.5 -P 5 -lambda 16.67 -B 7 -n 4 
+Average Packet Inter-Arrival Time : (241.114000)/(4) = 0.060279 sec   
+ Average Packet Service Time       : (4706.551000)/(4) = 1.176638 sec   
+
+ Average Packets in Q1 : (99407.111000)/(42004.440000) = 2.366586  
+ Average Packets in Q2 :  (0.121000)/(42004.440000) = 0.000003  
+ Average Packets in S  :  (4705.882353)/(42004.440000) = 0.112033  
+
+ Average time a Packet spends in system : (104.114143)/(4) = 26.028536 sec   
+ SD for time spent in system : sqrt((801.009245) - (677.484673)) = 11.114161 sec   
+
+ Token drop probability :  (0)/(21) = 0.000000
+ Packet drop probability :  (0)/(4) = 0.000000
+
+3) ./warmup2 -B 3 -t ~csci570b/public/cs402/warmup2/f0.txt 
+ Average Packet Inter-Arrival Time : (24978.670000)/(10) = 2.497867 sec   
+ Average Packet Service Time       : (19121.924000)/(6) = 3.186987 sec   
+
+ Average Packets in Q1 : (2026.038000)/(27598.346000) = 0.073412  
+ Average Packets in Q2 :  (2707.064000)/(27598.346000) = 0.098088  
+ Average Packets in S  :  (19121.000000)/(27598.346000) = 0.692831  
+
+ Average time a Packet spends in system : (23.855605)/(6) = 3.975934 sec   
+ SD for time spent in system : sqrt((20.617202) - (15.808052)) = 2.192977 sec   
+
+ Token drop probability :  (25)/(38) = 0.657895
+ Packet drop probability :  (4)/(10) = 0.400000
+
+4)   ./warmup2 -t ~csci570b/public/cs402/warmup2/f1.txt -B 2 
+Average Packet Inter-Arrival Time : (19556.160000)/(10) = 1.955616 sec   
+ Average Packet Service Time       : (21231.947000)/(7) = 3.033135 sec   
+
+ Average Packets in Q1 : (0.014000)/(29252.606000) = 0.000000  
+ Average Packets in Q2 :  (19291.073000)/(29252.606000) = 0.659465  
+ Average Packets in S  :  (21231.000000)/(29252.606000) = 0.725781  
+
+ Average time a Packet spends in system : (40.523516)/(7) = 5.789074 sec   
+ SD for time spent in system : sqrt((52.030479) - (33.513374)) = 4.303151   
+
+ Token drop probability :  (19)/(30) = 0.633333
+ Packet drop probability :  (3)/(10) = 0.300000
+
+
+5) ./warmup2 -B 1 -t ~csci570b/public/cs402/warmup2/f2.txt 
+ Average Packet Inter-Arrival Time : (13124.605000)/(50) = 0.262492 sec   
+ Average Packet Service Time       : (3743.323000)/(9) = 0.415925 sec   
+
+ Average Packets in Q1 : (574.168000)/(13337.524000) = 0.043049  
+ Average Packets in Q2 :  (810.617000)/(13337.524000) = 0.060777  
+ Average Packets in S  :  (3742.000000)/(13337.524000) = 0.280562  
+
+ Average time a Packet spends in system : (5.129018)/(9) = 0.569891 sec   
+ SD for time spent in system : sqrt((0.344279) - (0.324776)) = 0.139655   
+
+ Token drop probability :  (10)/(20) = 0.500000
+ Packet drop probability :  (41)/(50) = 0.820000
+
+6)  ./warmup2 -t ~csci570b/public/cs402/warmup2/f3.txt 
+ Average Packet Inter-Arrival Time : (24020.126000)/(80) = 0.300252 sec   
+ Average Packet Service Time       : (48919.076000)/(80) = 0.611488 sec   
+
+ Average Packets in Q1 : (6347641.280000)/(172714.261000) = 36.752271  
+ Average Packets in Q2 :  (2530.576000)/(172714.261000) = 0.014652  
+ Average Packets in S  :  (48908.000000)/(172714.261000) = 0.283173  
+
+ Average time a Packet spends in system : (6399.098893)/(80) = 79.988736 sec   
+ SD for time spent in system : sqrt((8238.290956) - (6398.197913)) = 42.896306   
+
+ Token drop probability :  (0)/(259) = 0.000000
+ Packet drop probability :  (0)/(80) = 0.000000
+
+7) ./warmup2 -r 5 -B 2 -t ~csci570b/public/cs402/warmup2/f4.txt 
+ Average Packet Inter-Arrival Time : (17111.088000)/(100) = 0.171111 sec   
+ Average Packet Service Time       : (27028.065999)/(87) = 0.310667 sec   
+
+ Average Packets in Q1 : (15671.103000)/(27265.758000) = 0.574754  
+ Average Packets in Q2 :  (440609.297000)/(27265.758000) = 16.159804  
+ Average Packets in S  :  (27016.000000)/(27265.758000) = 0.990840  
+
+ Average time a Packet spends in system : (483.315595)/(87) = 5.555352 sec   
+ SD for time spent in system : sqrt((38.206949) - (30.861932)) = 2.710169   
+
+ Token drop probability :  (2)/(90) = 0.022222
+ Packet drop probability :  (13)/(100) = 0.130000
+
+8)./warmup2 -B 2 -t ~csci570b/public/cs402/warmup2/f5.txt -r 10 
+ Average Packet Inter-Arrival Time : (10516.191000)/(500) = 0.021032 sec   
+ Average Packet Service Time       : (6725.927001)/(203) = 0.033133 sec   
+
+ Average Packets in Q1 : (1986705.397999)/(30557.375000) = 65.015578  
+ Average Packets in Q2 :  (221.913000)/(30557.375000) = 0.007262  
+ Average Packets in S  :  (6700.000000)/(30557.375000) = 0.219260  
+
+ Average time a Packet spends in system : (1993.672678)/(203) = 9.821048 sec   
+ SD for time spent in system : sqrt((130.096095) - (96.452977)) = 5.800269   
+
+ Token drop probability :  (0)/(305) = 0.000000
+ Packet drop probability :  (297)/(500) = 0.594000
+
+9) ./warmup2 -t ~csci570b/public/cs402/warmup2/f6.txt -r 5 -B 2 
+Average Packet Inter-Arrival Time : (10178.293000)/(500) = 0.020357 sec   
+ Average Packet Service Time       : (7905.622000)/(251) = 0.031497 sec   
+
+ Average Packets in Q1 : (7569705.388001)/(71069.952000) = 106.510630  
+ Average Packets in Q2 :  (12.166000)/(71069.952000) = 0.000171  
+ Average Packets in S  :  (7873.000000)/(71069.952000) = 0.110778  
+
+ Average time a Packet spends in system : (7577.646368)/(251) = 30.189826 sec   
+ SD for time spent in system : sqrt((1215.871627) - (911.425604)) = 17.448382   
+
+ Token drop probability :  (0)/(355) = 0.000000
+ Packet drop probability :  (249)/(500) = 0.498000
+
+10)  ./warmup2 -t ~csci570b/public/cs402/warmup2/f7.txt -B 1 -r 5 
+Average Packet Inter-Arrival Time : (16002.768000)/(33) = 0.484932 sec   
+ Average Packet Service Time       : (4396.196000)/(8) = 0.549524 sec   
+
+ Average Packets in Q1 : (0.016000)/(16014.749000) = 0.000001  
+ Average Packets in Q2 :  (570.484000)/(16014.749000) = 0.035622  
+ Average Packets in S  :  (4395.000000)/(16014.749000) = 0.274435  
+
+ Average time a Packet spends in system : (4.967530)/(8) = 0.620941 sec   
+ SD for time spent in system : sqrt((0.473709) - (0.385568)) = 0.296886   
+
+ Token drop probability :  (71)/(80) = 0.887500
+ Packet drop probability :  (25)/(33) = 0.757576
+
+
+
+
+
+

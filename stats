@@ -1,0 +1,11 @@
+The average number of packets at a facility can be obtained by adding up all the time spent at that facility (for all packets) divided by the total emulation time. The time spent in system for a packet is the difference between the time the packet departed from the server and the time that packet arrived. The token drop probability is the total number of tokens dropped because the token bucket was full divided by the total number of tokens that was produced by the token depositing thread. The packet drop probability is the total number of packets dropped because the number of tokens required is larger than the bucket depth divided by the total number of packets that was produced by the arrival thread.
+
+All real values in the statistics must be printed with at least 6 significant digits. (If you are using printf(), you can use "%.6g".) A timestamp in the beginning of a line of trace output must be in milliseconds with 8 digits (zero-padded) before the decimal point and 3 digits (zero-padded) after the decimal point.
+
+Please use sample means when you calculated the averages. If n is the number of sample, this mean that you should divide things by n (and not n-1).
+
+The unit for time related statistics must be in seconds (and not milliseconds).
+
+Let X be something you measure. The standard deviation of X is the square root of the variance of X. The variance of X is the average of the square of X minus the square of the average of X. Let E(X) denote the average of X, you can write:
+
+Var(X) = E(X2) - [E(X)]2
